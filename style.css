@@ -319,6 +319,16 @@ header .buttons i:last-child:hover {
 
   .images .details {
     bottom: 0px;
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    bottom: -100px;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    justify-content: space-between;
+    transition: bottom 0.1s ease;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
   }
 
   .gallery .load-more {
