@@ -9,7 +9,7 @@ const closeImgBtn = lightbox.querySelector(".close-icon");
 const apiKey = "qj3Gz8VtixG8UeuxKCMf4qJZJMJIEff9Kvr97JoMoW5DSoDkgpYgxuLM";
 const perPage = 15;
 let currentPage = 1;
-let searchTerm = null;
+let searchTerm = kitchen;
 
 const downloadImg = (imgUrl) => {
     // Converting received img to blob, creating its download link, & downloading it
@@ -88,7 +88,7 @@ const loadSearchImages = (e) => {
     }
 }
 
-getImages(`https://api.pexels.com/v1/curated?page=${currentPage}&per_page=${perPage}`);
+getImages(`https://api.pexels.com/v1/search?query=${searchTerm}&page=1&per_page=${perPage}`);
 loadMoreBtn.addEventListener("click", loadMoreImages);
 searchInput.addEventListener("keyup", loadSearchImages);
 closeImgBtn.addEventListener("click", hideLightbox);
