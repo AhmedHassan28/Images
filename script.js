@@ -9,7 +9,7 @@ const closeImgBtn = lightbox.querySelector(".close-icon");
 const apiKey = "qj3Gz8VtixG8UeuxKCMf4qJZJMJIEff9Kvr97JoMoW5DSoDkgpYgxuLM";
 const perPage = 15;
 let currentPage = 1;
-let searchTerm = kitchen;
+let searchTerm = "kitchen";
 
 const downloadImg = (imgUrl) => {
     // Converting received img to blob, creating its download link, & downloading it
